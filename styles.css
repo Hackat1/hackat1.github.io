@@ -119,18 +119,22 @@ section {
   }
 
   .nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #4B0000;
     margin-top: 0.5rem;
     padding: 0.5rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
   .nav-links.show {
-  max-height: 500px; /* Enough space for 2-3 links */
-  opacity: 1;
-}
+    max-height: 500px; /* Adjust based on how many links */
+    opacity: 1;
+  }
 
   nav a {
     margin: 0.5rem 0;
