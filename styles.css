@@ -5,6 +5,10 @@ body {
   color: #000000;
 }
 
+h1, h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
 .layout {
   display: flex;
   flex-direction: row;
