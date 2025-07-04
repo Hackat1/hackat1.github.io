@@ -14,11 +14,11 @@ html, body {
   min-height: 100vh;
 }
 
-/* Delete after testing */
+/* 🔍 Diagnostic only
 body {
-  outline: 2px solid green; /* 🔍 Diagnostic only */
+  outline: 2px solid green;
 }
-/* Delete after testing */
+*/
 
 /* ========== 🧱 Typography ========== */
 h1, h2, h3 {
