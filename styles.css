@@ -1,4 +1,3 @@
-
 /* styles.css */
 body {
   margin: 0;
@@ -15,10 +14,15 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
+}
+
+nav img.logo {
+  height: 40px;
 }
 
 nav a {
@@ -46,14 +50,39 @@ footer {
   margin-top: 2rem;
 }
 
-.logo {
-  height: 40px;
-}
-
 h1, h2 {
   color: #800000;
 }
 
 section {
   margin-bottom: 2rem;
+}
+
+/* 🌐 Responsive design for smaller screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0 0 0;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  nav img.logo {
+    height: 32px;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
 }
