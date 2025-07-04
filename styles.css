@@ -8,6 +8,12 @@ html, body {
   min-height: 100vh;
 }
 
+/* Delete after testing */
+body {
+  outline: 2px solid green; /* 🔍 Diagnostic only */
+}
+/* Delete after testing */
+
 /* ========== 🧱 Typography ========== */
 h1, h2, h3 {
   font-family: "Georgia", "Times New Roman", serif;
