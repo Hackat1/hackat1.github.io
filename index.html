@@ -8,45 +8,48 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-		<div class="nav-header">
-			<img src="assets/logo.png" alt="Vincent Buchan Bookkeeping" class="logo"/>
-			<button class="hamburger" onclick="toggleMenu()">☰</button>
-		</div>
-		<div class="nav-links" id="navLinks">
-			<a href="index.html">Home</a>
-			<a href="about.html">About Us</a>
-		</div>
-	</nav>
-  </header>
+  <div class="layout">
+    <header>
+      <nav>
+        <div class="nav-header">
+          <img src="assets/logo.png" alt="Vincent Buchan Bookkeeping" class="logo"/>
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <h1>Welcome to Vincent Buchan Bookkeeping</h1>
-      <p>Reliable, personal bookkeeping services tailored to your business needs.</p>
-    </section>
+    <main>
+      <section>
+        <h1>Welcome to Vincent Buchan Bookkeeping</h1>
+        <p>Reliable, personal bookkeeping services tailored to your business needs.</p>
+      </section>
 
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>General ledger maintenance</li>
-        <li>Bank reconciliations</li>
-        <li>Monthly financial reports</li>
-        <li>Accounts payable and receivable</li>
-      </ul>
-    </section>
-  </main>
+      <section>
+        <h2>Our Services</h2>
+        <ul>
+          <li>General ledger maintenance</li>
+          <li>Bank reconciliations</li>
+          <li>Monthly financial reports</li>
+          <li>Accounts payable and receivable</li>
+        </ul>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>Contact us at <a href="mailto:Deidre.Buchan@gmail.com">Deidre.Buchan@gmail.com</a></p>
     <p>Vincent Buchan Bookkeeping &copy; 2025</p>
   </footer>
-<script>
-  function toggleMenu() {
-    const links = document.getElementById('navLinks');
-    links.classList.toggle('show');
-  }
-</script>
+
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById('navLinks');
+      links.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
