@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* ========== 🌐 Base Styles ========== */
 html, body {
   margin: 0;
