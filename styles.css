@@ -98,11 +98,12 @@ nav a:hover {
 
 /* ========== 📄 Main Content Area ========== */
 main {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: #D7C4A3; /* Footer background tone */
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  min-height: 1px;
+  padding: 2rem;
+  background-color: #D7C4A3; /* Footer background tone */
 }
 
 .content-wrapper {
@@ -199,10 +200,11 @@ footer {
   }
   
   .nav-header {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
   .nav-links {
