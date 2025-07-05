@@ -203,12 +203,13 @@ main {
 
 /* ========== 📣 CTA Panel ========== */
 .cta-panel {
-  flex: 1;
   background-color: #ffffff;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  align-self: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 700px;
 }
 
 .cta-panel h3 {
