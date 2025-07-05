@@ -197,6 +197,13 @@ footer {
   .hamburger {
     display: block;
   }
+  
+  .nav-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
   .nav-links {
     display: flex;
@@ -212,7 +219,7 @@ footer {
   }
 
   .nav-links.show {
-    max-height: 200px;
+    max-height: 1000px;
     opacity: 1;
   }
 
