@@ -145,6 +145,15 @@ main {
   gap: 2rem;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px dashed rgba(128, 0, 0, 0.3);
+  margin: 3rem 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ========== 📚 Text Content Section ========== */
 .main-text-content {
   flex: 2;
