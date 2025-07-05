@@ -9,50 +9,51 @@
   <link rel="icon" type="image/x-icon" href="assets/VBBK_favicon_serif.ico">
 </head>
 <body>
+  <div class="page-wrapper">
+    <div class="layout">
+      <header>
+        <nav>
+          <div class="nav-header">
+            <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large"/>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+          </div>
+          <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+          </div>
+        </nav>
+      </header>
 
-  <div class="layout">
-    <header>
-      <nav>
-        <div class="nav-header">
-          <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large"/>
-          <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+      <main>
+        <div class="content-wrapper">
+          <section>
+            <h1>About Vincent Buchan Bookkeeping</h1>
+            <p>
+              At Vincent Buchan Bookkeeping, we believe that personalized service and attention to detail are key to helping your business thrive.
+            </p>
+            <p>
+              Whether you're a sole proprietor or running a growing operation, we're here to support you with professional, affordable bookkeeping tailored to your needs.
+            </p>
+            <p>
+              Deidre Buchan has a Bachelors Degree in Mathematics from the University of Washington. She is passionate about numbers and helping small businesses succeed. With years of experience in financial administration and bookkeeping, she ensures every transaction is accounted for and every client feels supported.
+            </p>
+          </section>
         </div>
-        <div class="nav-links" id="navLinks">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-        </div>
-      </nav>
-    </header>
+      </main>
+    </div>
 
-    <main>
-	 <div class="content-wrapper">
-      <section>
-        <h1>About Vincent Buchan Bookkeeping</h1>
-        <p>
-          At Vincent Buchan Bookkeeping, we believe that personalized service and attention to detail are key to helping your business thrive.
-        </p>
-		        <p>
-          Whether you're a sole proprietor or running a growing operation, we're here to support you with professional, affordable bookkeeping tailored to your needs.
-        </p>
-        <p>
-          Deidre Buchan has a Bachelors Degree in Mathematics from the University of Washington. She is passionate about numbers and helping small businesses succeed. With years of experience in financial administration and bookkeeping, she ensures every transaction is accounted for and every client feels supported.
-        </p>
-      </section>
-	 </div>
-    </main>
+    <footer>
+      <p>Vincent Buchan Bookkeeping &copy; 2025</p>
+    </footer>
   </div>
 
-  <footer>
-    <p>Vincent Buchan Bookkeeping &copy; 2025</p>
-  </footer>
-
   <script>
-   function toggleMenu() {
-    const links = document.getElementById('navLinks');
-    const button = document.querySelector('.hamburger');
-    const isOpen = links.classList.toggle('show');
-    button.setAttribute('aria-expanded', isOpen);
-   }
+    function toggleMenu() {
+      const links = document.getElementById('navLinks');
+      const button = document.querySelector('.hamburger');
+      const isOpen = links.classList.toggle('show');
+      button.setAttribute('aria-expanded', isOpen);
+    }
   </script>
 </body>
 </html>

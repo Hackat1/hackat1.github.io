@@ -26,6 +26,13 @@ h1, h2, h3 {
   color: #800000;
 }
 
+/* ========== 📄 Page Wrapper for Sticky Footer ========== */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* ========== 🧩 Layout Wrapper ========== */
 .layout {
   display: flex;
