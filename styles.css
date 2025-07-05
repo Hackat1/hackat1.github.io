@@ -10,7 +10,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #FDF8F3; /* Cream */
+  background: linear-gradient(to bottom, #fdf8f3 0%, #f5e9d7 100%); /* Cream */
   color: #000000;
 }
 
