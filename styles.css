@@ -49,13 +49,6 @@ p {
   font-size: 1.05rem;
 }
 
-/* ========== 📄 Page Wrapper for Sticky Footer ========== */
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 /* ========== 🧩 Layout Wrapper ========== */
 .layout {
   display: flex;
@@ -97,11 +90,6 @@ nav {
   transition: none;
 }
 
-nav img.logo {
-  height: 40px;
-  margin-bottom: 1rem;
-}
-
 .logo-large {
   height: auto;
   max-width: 100%;
@@ -134,7 +122,6 @@ main {
   margin: 0 auto;
   width: 100%;
   padding: 0 1rem;
-  box-sizing: border-box;
 }
 
 .main-content-area {
@@ -344,9 +331,4 @@ footer {
 
   main {
     padding: 1rem;
-  }
-
-  nav img.logo {
-    height: 32px;
-    margin-bottom: 0.5rem;
   }
