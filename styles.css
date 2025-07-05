@@ -46,7 +46,7 @@ h2 {
 
 p {
   line-height: 1.6;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 /* ========== 📄 Page Wrapper for Sticky Footer ========== */
@@ -159,6 +159,12 @@ main {
   flex: 2;
   max-width: none;
   margin: 0;
+}
+
+.main-text-content ul li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
 }
 
 /* ========== 🔁 How It Works Section ========== */
