@@ -12,6 +12,8 @@ html, body {
   font-family: 'Playfair Display', serif;
   background: linear-gradient(to bottom, #fdf8f3 0%, #f5e9d7 100%); /* Cream */
   color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 🔍 Diagnostic only
