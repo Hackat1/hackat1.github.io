@@ -29,7 +29,7 @@ h1, h2, h3 {
 /* ========== 🧩 Layout Wrapper ========== */
 .layout {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
   width: 100%;
 }
@@ -94,6 +94,8 @@ main {
   flex-grow: 1;
   padding: 2rem;
   background-color: #D7C4A3; /* Footer background tone */
+  display: flex;
+  flex-direction: column;
 }
 
 .content-wrapper {
