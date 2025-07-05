@@ -39,6 +39,7 @@ h1, h2, h3 {
   flex-direction: row;
   flex: 1;
   width: 100%;
+  align-items: stretch;
 }
 
 /* ========== 📌 Sidebar Navigation ========== */
@@ -53,7 +54,6 @@ nav {
   align-items: flex-start;
   padding: 1rem;
   width: 220px;
-  height: 100vh;
   background-color: #4B0000;
 }
 
@@ -101,7 +101,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-height: 1px;
+  min-height: 100%;
   padding: 2rem;
   background-color: #D7C4A3; /* Footer background tone */
 }
