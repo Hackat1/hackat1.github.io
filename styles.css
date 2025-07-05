@@ -32,6 +32,24 @@ h1, h2, h3 {
   color: #800000;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #600000;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
 /* ========== 📄 Page Wrapper for Sticky Footer ========== */
 .page-wrapper {
   display: flex;
@@ -271,13 +289,12 @@ footer {
   line-height: 1.2;
 }
 
-h2 {
+  h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
-  color: #600000;
 }
 
-p {
+  p {
   line-height: 1.6;
   font-size: 1.05rem;
 }
