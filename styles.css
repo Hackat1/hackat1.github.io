@@ -166,7 +166,7 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   border-top: 1px solid #BCA890;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ========== 🍔 Hamburger Menu (Hidden by Default) ========== */
