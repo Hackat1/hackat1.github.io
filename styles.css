@@ -165,6 +165,11 @@ main {
 .cta-panel h3 {
   margin-top: 0;
   color: #4B0000;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
 }
 
 .cta-button {
