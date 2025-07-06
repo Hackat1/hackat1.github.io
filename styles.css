@@ -68,7 +68,7 @@ header {
   color: white;
 }
 
-nav {
+body > nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
