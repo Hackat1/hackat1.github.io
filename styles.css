@@ -33,19 +33,19 @@ h1, h2, h3 {
   color: #800000;
 }
 
-section h1 {
+h1, nav h1, section h1, article h1, aside h1{
   font-size: 2.5rem;
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
   line-height: 1.2;
 }
 
-section h2 {
+h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
 }
 
-section p {
+p {
   line-height: 1.6;
   font-size: 1.05rem;
 }
