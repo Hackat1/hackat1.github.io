@@ -33,7 +33,7 @@ h1, h2, h3 {
   color: #800000;
 }
 
-section h1 {
+h1, nav h1, section h1, article h1, aside h1{
   font-size: 2.5rem;
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
