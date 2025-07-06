@@ -2,20 +2,20 @@
 
 ## Supported Scope
 
-This security policy applies to the public-facing Vincent Buchan Bookkeeping website, hosted via GitHub Pages at [https://hackat1.github.io](https://hackat1.github.io). This includes the HTML/CSS source code in this repository, excluding GitHub infrastructure itself.
-
-## Reporting a Vulnerability
-
-If you discover a security vulnerability, please report it privately and responsibly.
-
-- **Contact:** chris.hack01@gmail.com  
+If you discover a security vulnerability, please report it responsibly by emailing:
 - Please include as much detail as possible (steps to reproduce, affected files, browser/environment info).
+**📧 chris.hack01@gmail.com**
 
-We will aim to acknowledge receipt of reports within 2 business days.
+We appreciate responsible disclosure and will respond promptly.
 
-## Security Measures in Place
+## Policy Location
 
-We actively maintain and review this site’s security posture. The following measures are currently in place:
+This repository follows the [RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116) standard.
+
+**Security.txt File:**  
+https://hackat1.github.io/.well-known/security.txt
+
+_Note: Full compliance requires a custom domain name. Until one is configured, some clients may not detect the security.txt file due to GitHub Pages URL limitations._
 
 - **HTTPS Enforced:** GitHub Pages is configured to force HTTPS for all visitors.  
 - **2FA Enabled:** All repository administrators are required to use Two-Factor Authentication.  
@@ -28,11 +28,26 @@ We actively maintain and review this site’s security posture. The following me
 - **Robots.txt:** Explicitly allows crawling of public pages; `security.txt` is accessible.  
 - **Security.txt:** Available at [`/.well-known/security.txt`](https://hackat1.github.io/.well-known/security.txt) to support responsible disclosure.
 
+## Additional Security Headers
+
+This site implements common security headers:
+- `X-Frame-Options: DENY`
+- `X-Content-Type-Options: nosniff`
+- `X-UA-Compatible: IE=edge`
+- `Referrer-Policy: no-referrer`
+- `Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()`
+- `Content-Security-Policy: default-src 'self'; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com;`
+
 ## No User Data Collected
 
 This site does not collect, process, or store user information. GDPR, SOC 2, and CCPA compliance are currently not applicable.
 
-## Future Considerations
+## Robots & Sitemap
 
+- `robots.txt` is configured to allow full crawling and references the `sitemap.xml`.
+- `sitemap.xml` is available at:  
+  https://hackat1.github.io/sitemap.xml
+
+## Future Considerations
 - Integration with third-party services (e.g., QuickBooks) may require updates to referrer and CSP policies.  
 - A formal vulnerability disclosure program (VDP) may be considered as the site expands.
