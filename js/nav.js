@@ -1,6 +1,11 @@
-function toggleMenu() {
-  const links = document.getElementById('navLinks');
-  const button = document.querySelector('.hamburger');
-  const isOpen = links.classList.toggle('show');
-  button.setAttribute('aria-expanded', isOpen);
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("show");
+      hamburger.setAttribute("aria-expanded", isOpen);
+    });
+  }
+});
