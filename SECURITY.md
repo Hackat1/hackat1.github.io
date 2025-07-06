@@ -1,38 +1,38 @@
 # Security Policy
 
+## Supported Scope
+
+This security policy applies to the public-facing Vincent Buchan Bookkeeping website, hosted via GitHub Pages at [https://hackat1.github.io](https://hackat1.github.io). This includes the HTML/CSS source code in this repository, excluding GitHub infrastructure itself.
+
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability related to this website, please report it directly to:
+If you discover a security vulnerability, please report it privately and responsibly.
 
-📧 **chris.hack01@gmail.com**
+- **Contact:** chris.hack01@gmail.com  
+- Please include as much detail as possible (steps to reproduce, affected files, browser/environment info).
 
-We take all reports seriously and aim to respond within **48 hours**.
+We will aim to acknowledge receipt of reports within 2 business days.
 
----
+## Security Measures in Place
 
-## Current Security Measures
+We actively maintain and review this site’s security posture. The following measures are currently in place:
 
-The Vincent Buchan Bookkeeping website is static (HTML/CSS only) and follows industry-recommended security practices:
+- **HTTPS Enforced:** GitHub Pages is configured to force HTTPS for all visitors.  
+- **2FA Enabled:** All repository administrators are required to use Two-Factor Authentication.  
+- **Branch Protections:** Main branch is protected; pull requests are required for changes.  
+- **Content Security Policy (CSP):** Restrictive policy in place to prevent unauthorized script execution.  
+- **Referrer Policy:** Set to `no-referrer` to limit information leakage (may change if integrations are added).  
+- **Permissions Policy:** Opted out of browser features like geolocation, camera, microphone, and fullscreen.  
+- **X-Frame-Options:** `DENY` to prevent clickjacking.  
+- **X-Content-Type-Options:** `nosniff` to protect against MIME-sniffing attacks.  
+- **Robots.txt:** Explicitly allows crawling of public pages; `security.txt` is accessible.  
+- **Security.txt:** Available at [`/.well-known/security.txt`](https://hackat1.github.io/.well-known/security.txt) to support responsible disclosure.
 
-- ✅ HTTPS enforced via GitHub Pages
-- ✅ Two-Factor Authentication (2FA) enabled on the GitHub account
-- ✅ Strong GitHub branch protection rules (PRs required for changes, linear history disabled)
-- ✅ `Content-Security-Policy` header in use to limit resource loading
-- ✅ `Referrer-Policy` set to `no-referrer` to avoid leaking origin data
-- ✅ `Permissions-Policy` limits browser feature access
-- ✅ No external JavaScript or third-party scripts used
-- ✅ `robots.txt` allows crawl access; no sensitive directories present
-- ✅ `.well-known/security.txt` implemented (pending full RFC compliance on custom domain)
-- ✅ All fonts served via Google Fonts only (no additional external assets)
+## No User Data Collected
 
----
+This site does not collect, process, or store user information. GDPR, SOC 2, and CCPA compliance are currently not applicable.
 
-## Planned Improvements
+## Future Considerations
 
-- Add a custom domain name to enable full `.well-known` support
-- Implement Subresource Integrity (SRI) if/when third-party scripts are used
-- Conduct periodic accessibility and security audits as new content is added
-
----
-
-_Last updated: July 2025_
+- Integration with third-party services (e.g., QuickBooks) may require updates to referrer and CSP policies.  
+- A formal vulnerability disclosure program (VDP) may be considered as the site expands.
