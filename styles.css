@@ -40,12 +40,12 @@ h1, nav h1, section h1, article h1, aside h1{
   line-height: 1.2;
 }
 
-h2 {
+section h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
 }
 
-p {
+section p {
   line-height: 1.6;
   font-size: 1.05rem;
 }
