@@ -164,6 +164,10 @@ main {
   margin: 0;
 }
 
+.main-text-content h1 {
+  font-size: 2.5rem;
+}
+
 .main-text-content ul li {
   font-size: 1.05rem;
   line-height: 1.7;
