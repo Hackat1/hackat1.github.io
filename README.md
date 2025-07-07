@@ -64,6 +64,26 @@ See [`accessibility.md`](accessibility.md) for a detailed summary of audit resul
 
 ---
 
+## 🗼 Lighthouse Scores
+
+This site is regularly audited for performance, accessibility, best practices, and SEO.
+
+### 📱 Mobile
+- **Performance**: 91
+- **Accessibility**: 100
+- **Best Practices**: 82
+- **SEO**: 100
+
+### 🖥️ Desktop
+- **Performance**: 100
+- **Accessibility**: 100
+- **Best Practices**: 81
+- **SEO**: 100
+
+Scores reflect results from the July 7, 2025 audit. See [`accessibility.md`](accessibility.md) for audit history and remediation notes.
+
+---
+
 ## 🔍 Search Engine Indexing
 
 This site is indexable and optimized for search engines:
