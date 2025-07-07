@@ -8,7 +8,7 @@ This repository contains the static website for **Vincent Buchan Bookkeeping**, 
 
 The site is currently hosted via **GitHub Pages** at:
 
-**[https://hackat1.github.io/hackat1.github.io](https://hackat1.github.io/hackat1.github.io)**
+**[https://hackat1.github.io](https://hackat1.github.io)**
 
 This will be updated once a custom domain is implemented.
 
@@ -51,7 +51,7 @@ For full details, see [`SECURITY.md`](./SECURITY.md).
 
 ## 👁️‍🗨️ Accessibility
 
-This site is built with accessibility in mind and has been tested against modern Lighthouse standards.
+This site is built with accessibility in mind and has been tested using modern Lighthouse accessibility standards.
 
 - Semantic HTML with clear heading structure
 - Color contrast meets WCAG AA compliance
@@ -84,10 +84,14 @@ Scores reflect results from the July 7, 2025 audit. See [`accessibility.md`](acc
 
 ---
 
-## 🔍 Search Engine Indexing
+## 🔎 Search Engine Optimization (SEO)
 
 This site is indexable and optimized for search engines:
 
+- Descriptive `<title>` and `<meta name="description">` tags
+- Open Graph and Twitter Card metadata for link sharing
+- Sitemap.xml and robots.txt included
+- Mobile-friendly and fast-loading for SEO compliance
 - `robots.txt` allows crawling of all public content  
 - `sitemap.xml` is available at [https://hackat1.github.io/sitemap.xml](https://hackat1.github.io/sitemap.xml)  
 - Google Search Console verified via meta tag
