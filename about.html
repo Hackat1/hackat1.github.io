@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Learn more about us and the personalized bookkeeping services behind Vincent Buchan Bookkeeping.">
-  <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="referrer" content="no-referrer">
@@ -16,20 +15,21 @@
   <link rel="icon" type="image/x-icon" href="assets/VBBK_favicon_serif.ico">
 </head>
 <body>
+  <h1 class="visually-hidden">Vincent Buchan Bookkeeping</h1>
   <div class="page-wrapper">
     <div class="layout">
       <header>
-        <nav>
-          <div class="nav-header">
-            <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large" />
-            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
-          </div>
-          <div class="nav-links" id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-          </div>
-        </nav>
-      </header>
+  <nav aria-label="Main navigation">
+    <div class="nav-header">
+      <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large" />
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </nav>
+</header>
 
       <main>
         <div class="content-wrapper">
@@ -50,17 +50,12 @@
     </div>
 
     <footer>
-      <p>Vincent Buchan Bookkeeping &copy; 2025</p>
-    </footer>
+  <nav aria-label="Footer navigation">
+    <p>Vincent Buchan Bookkeeping &copy; 2025</p>
+  </nav>
+</footer>
   </div>
 
-  <script>
-    function toggleMenu() {
-      const links = document.getElementById('navLinks');
-      const button = document.querySelector('.hamburger');
-      const isOpen = links.classList.toggle('show');
-      button.setAttribute('aria-expanded', isOpen);
-    }
-  </script>
+  <script src="js/nav.js" defer></script>
 </body>
 </html>

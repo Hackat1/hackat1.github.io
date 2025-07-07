@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Vincent Buchan Bookkeeping helps small businesses stay organized with professional bookkeeping services.">
-  <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="referrer" content="no-referrer">
@@ -13,25 +12,25 @@
   <meta name="google-site-verification" content="7MmUGFXZ7tirQu8ClJtYoHZKrYs_tTgMCoKITzyzzlY" />
   <title>Vincent Buchan Bookkeeping</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/x-icon" href="assets/VBBK_favicon_serif.ico">
+  <link rel="icon" type="image/x-icon" href="assets/VBBK_favicon_serif.ico" sizes="32x32">
 </head>
 <body>
-
+  <h1 class="visually-hidden">Vincent Buchan Bookkeeping</h1>
   <div class="page-wrapper">
 
     <div class="layout">
-      <header>
-        <nav>
-          <div class="nav-header">
-            <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large"/>
-            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
-          </div>
-          <div class="nav-links" id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-          </div>
-        </nav>
-      </header>
+   <header>
+  <nav aria-label="Main navigation">
+    <div class="nav-header">
+      <img src="assets/VBBK_logo_256x256.png" alt="Vincent Buchan Bookkeeping" class="logo-large" />
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </nav>
+</header>
 
       <main>
         <div class="main-content-area">
@@ -75,19 +74,15 @@
             </section>
 
             <section class="cta-panel">
-              <div class="content-wrapper">
-                <h3>Let’s Talk!</h3>
-                <p>Have questions or ready to get started?</p>
-                <span id="email"></span>
-				<script>
-					const user = "Deidre.Buchan";
-					const domain = "gmail.com";
-					const link = `mailto:${user}@${domain}`;
-					const buttonLabel = "Schedule a Consultation";
-					document.getElementById("email").innerHTML = `<a href="${link}" class="cta-button">${buttonLabel}</a>`;
-				</script>
-              </div>
-            </section>
+			 <div class="content-wrapper">
+			   <h3>Let's Talk!</h3>
+			   <p>Have questions or ready to get started?</p>
+			   <span id="email"></span>
+			   <p class="cta-note">
+			    Not working? You can also reach us at <span id="fallback-email"></span>.
+			   </p>
+			 </div>
+			</section>
 
           </div> <!-- .main-text-content -->
         </div> <!-- .main-content-area -->
@@ -95,18 +90,15 @@
     </div> <!-- .layout -->
 
     <footer>
-      <p>Vincent Buchan Bookkeeping &copy; 2025</p>
-    </footer>
+  <nav aria-label="Footer navigation">
+    <p>Vincent Buchan Bookkeeping &copy; 2025</p>
+  </nav>
+</footer>
 
   </div> <!-- .page-wrapper -->
 
-  <script>
-    function toggleMenu() {
-      const links = document.getElementById('navLinks');
-      const button = document.querySelector('.hamburger');
-      const isOpen = links.classList.toggle('show');
-      button.setAttribute('aria-expanded', isOpen);
-    }
+  <script src="js/nav.js" defer></script>
   </script>
+  <script src="js/cta.js"></script>
 </body>
 </html>
