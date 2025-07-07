@@ -49,6 +49,21 @@ For full details, see [`SECURITY.md`](./SECURITY.md).
 
 ---
 
+## 👁️‍🗨️ Accessibility
+
+This site is built with accessibility in mind and has been tested against modern Lighthouse standards.
+
+- Semantic HTML with clear heading structure
+- Color contrast meets WCAG AA compliance
+- Keyboard navigation is supported
+- ARIA labels added to navigation elements
+- Responsive layout for all screen sizes
+- `<meta name="referrer" content="no-referrer">` for added privacy
+
+See [`accessibility.md`](accessibility.md) for a detailed summary of audit results and ongoing improvements.
+
+---
+
 ## 🔍 Search Engine Indexing
 
 This site is indexable and optimized for search engines:
