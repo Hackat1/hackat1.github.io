@@ -468,7 +468,7 @@ footer {
 }
 
 @media (prefers-color-scheme: light) {
-  .cta-section p,
+  .cta-panel p,
   .how-it-works p {
     color: #333; /* Adjust for preferred contrast */
   }
