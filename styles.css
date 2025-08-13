@@ -353,55 +353,119 @@ footer {
     padding: 1rem;
   }
   
-/* ===== Dark Mode ===== */
+/* ===== Dark Mode (place at very bottom of styles.css) ===== */
 @media (prefers-color-scheme: dark) {
 
-  /* Base background & text */
-  html, body, .page-wrapper, .layout, main {
+  /* Page + global text */
+  html, body,
+  .page-wrapper,
+  .layout,
+  main {
     background: linear-gradient(to bottom, #1a1a1a 0%, #2a2a2a 100%) !important;
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
   }
 
   /* Headings */
   h1, h2, h3, h4, h5, h6 {
-    color: #ffe6e6; /* lightened burgundy */
+    color: #ffe6e6 !important; /* lightened burgundy tone */
   }
 
-  /* Paragraphs & lists */
+  /* Body text & lists */
   p, li {
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
   }
 
   /* Links */
   a {
-    color: #ffcccc; /* soft burgundy-pink */
+    color: #ffcccc !important;
   }
   a:hover, a:focus {
-    color: #ffffff; /* bright white on hover */
+    color: #ffffff !important;
   }
 
-  /* Navigation & footer backgrounds */
-  nav, footer {
-    background-color: #222;
-    color: #ccc;
+  /* Header / Sidebar nav (desktop) */
+  header,
+  body > nav {
+    background-color: #222 !important;
+    color: #ccc !important;
   }
 
-  /* Navigation links */
+  /* Nav links */
   nav a {
-    color: #ffcccc;
+    color: #ffcccc !important;
   }
   nav a:hover, nav a:focus {
-    color: #ffffff;
+    color: #ffffff !important;
+    text-decoration: underline;
   }
 
-  /* Main text content containers */
+  /* Mobile nav menu panel */
+  .nav-links {
+    background-color: #222 !important;
+  }
+  .nav-links.show {
+    background-color: #222 !important;
+    opacity: 1 !important;
+  }
+
+  /* Main content panels */
+  .content-wrapper {
+    /* keep transparent unless you want panel look; leave as-is */
+  }
   .main-text-content {
-    background: #1e1e1e;
-    border: 1px solid #333;
+    background: #1e1e1e !important;
+    border: 1px solid #333 !important;
   }
 
-  /* Section dividers */
+  /* How It Works */
+  .how-it-works {
+    background-color: #1a1a1a !important; /* was cream */
+  }
+  .how-it-works h2 {
+    color: #ffe6e6 !important;
+  }
+  .steps .step {
+    background-color: #1f1f1f !important;  /* was white */
+    border: 1px solid #333 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+  }
+  .step h3 {
+    color: #ffe6e6 !important;
+  }
+  .step p {
+    color: #dddddd !important;
+  }
+
+  /* CTA panel */
+  .cta-panel {
+    background-color: #1f1f1f !important;  /* was white */
+    border: 1px solid #333 !important;
+    color: #dddddd !important;
+  }
+  .cta-panel h3 {
+    color: #ffe6e6 !important;
+  }
+  .cta-button {
+    background-color: #4B0000 !important;  /* brand burgundy */
+    color: #ffffff !important;
+    border: 1px solid #660000 !important;
+  }
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #800000 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35) !important;
+  }
+
+  /* Section divider */
   .section-divider {
-    border-color: #444;
+    border-top: 1px dashed rgba(255, 255, 255, 0.25) !important;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #222 !important;
+    color: #ccc !important;
+    border-top: 1px solid #333 !important;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.35) !important;
   }
 }
