@@ -466,3 +466,10 @@ footer {
     box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.35) !important;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .cta-section p,
+  .how-it-works p {
+    color: #333; /* Adjust for preferred contrast */
+  }
+}
