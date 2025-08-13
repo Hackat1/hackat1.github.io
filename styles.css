@@ -349,6 +349,10 @@ footer {
   padding: 1rem;
 }
 
+  main {
+    padding: 1rem;
+  }
+  
 /* ===== Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
 
@@ -401,7 +405,3 @@ footer {
     border-color: #444;
   }
 }
-
-  main {
-    padding: 1rem;
-  }
