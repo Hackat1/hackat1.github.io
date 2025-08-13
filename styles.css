@@ -349,6 +349,59 @@ footer {
   padding: 1rem;
 }
 
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+
+  /* Base background & text */
+  html, body {
+    background: linear-gradient(to bottom, #1a1a1a 0%, #2a2a2a 100%);
+    color: #f2f2f2;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffe6e6; /* lightened burgundy */
+  }
+
+  /* Paragraphs & lists */
+  p, li {
+    color: #f2f2f2;
+  }
+
+  /* Links */
+  a {
+    color: #ffcccc; /* soft burgundy-pink */
+  }
+  a:hover, a:focus {
+    color: #ffffff; /* bright white on hover */
+  }
+
+  /* Navigation & footer backgrounds */
+  nav, footer {
+    background-color: #222;
+    color: #ccc;
+  }
+
+  /* Navigation links */
+  nav a {
+    color: #ffcccc;
+  }
+  nav a:hover, nav a:focus {
+    color: #ffffff;
+  }
+
+  /* Main text content containers */
+  .main-text-content {
+    background: #1e1e1e;
+    border: 1px solid #333;
+  }
+
+  /* Section dividers */
+  .section-divider {
+    border-color: #444;
+  }
+}
+
   main {
     padding: 1rem;
   }
