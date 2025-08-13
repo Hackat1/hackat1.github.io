@@ -410,8 +410,8 @@ footer {
 @media (prefers-color-scheme: dark) {
 
   /* Base background & text */
-  html, body {
-    background: linear-gradient(to bottom, #1a1a1a 0%, #2a2a2a 100%);
+  html, body, .page-wrapper, .layout, main {
+    background: linear-gradient(to bottom, #1a1a1a 0%, #2a2a2a 100%) !important;
     color: #f2f2f2;
   }
 
