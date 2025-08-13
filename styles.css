@@ -353,7 +353,7 @@ footer {
     padding: 1rem;
   }
   
-/* ===== Dark Mode (place at very bottom of styles.css) ===== */
+/* ===== Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
 
   /* Page + global text */
