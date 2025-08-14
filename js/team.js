@@ -21,7 +21,7 @@ export const team = [
     title: "Financial Planning & Strategy",
     certifications: [],
     email: "neo.vincent2629@gmail.com",
-    photo: { src: "assets/team/neo_vincent.jpg", alt: "Portrait of Neo Vincent" },
+    photo: { src: "assets/team/neo_vincent.png", alt: "Portrait of Neo Vincent" },
     bioShort:
       "Neo distills complex financial data into actionable insight to drive profitability and long-term growth.",
     bioLong:
