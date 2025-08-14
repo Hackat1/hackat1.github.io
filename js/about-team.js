@@ -55,11 +55,16 @@ function renderMember(m) {
   const more =
     m.bioLong && m.bioLong.trim().length
       ? el(
-          "details",
-          { class: "team-more" },
-          el("summary", {}, "Read more"),
-          el("p", {}, m.bioLong)
-        )
+        "details",
+        { class: "team-more" },
+        el(
+          "summary",
+          { "aria-label": `Read more about ${m.name}` },
+          "Read more",
+          el("span", { class: "chev", "aria-hidden": "true" }, "▾")
+        ),
+        el("p", {}, m.bioLong)
+      )
       : null;
 
   const contact =

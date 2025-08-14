@@ -416,6 +416,54 @@ footer {
   color: inherit;
 }
 
+/* --- Team section: interactive states --- */
+
+/* "Read more" summary behaves like a small button */
+.about-team-section .team-more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.04);
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s ease, box-shadow .15s ease, transform .04s ease;
+  outline: none; /* use focus-visible ring below */
+}
+.about-team-section .team-more summary:hover {
+  background: rgba(0,0,0,0.08);
+}
+.about-team-section .team-more summary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(75,0,0,0.18); /* brand-ish focus ring */
+}
+.about-team-section details[open] summary {
+  background: rgba(0,0,0,0.06);
+}
+
+/* Optional: a tiny chevron that flips open/closed */
+.about-team-section .team-more summary .chev {
+  transition: transform .15s ease;
+}
+.about-team-section details[open] .chev {
+  transform: rotate(180deg);
+}
+
+/* Contact link as a subtle button */
+.about-team-section .team-contact a {
+  background: rgba(0,0,0,0.04);
+  transition: background .15s ease, box-shadow .15s ease, color .15s ease, border-color .15s ease;
+}
+.about-team-section .team-contact a:hover {
+  background: #4B0000;         /* brand burgundy */
+  color: #fff;
+  border-color: #4B0000;
+}
+.about-team-section .team-contact a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(75,0,0,0.18);
+}
+
 /* --- Team section: light mode fixes & scope --- */
 .about-team-section { 
   color: #2a2a2a;               /* default text in cards */
@@ -561,6 +609,28 @@ footer {
   .about-team-section .team-more,
   .about-team-section .team-contact a {
     color: #dddddd !important;
+  }
+  
+   /* Team interactivity (dark) */
+  .about-team-section .team-more summary {
+    border-color: #333;
+    background: #242424;
+  }
+  .about-team-section .team-more summary:hover {
+    background: #2a2a2a;
+  }
+  .about-team-section details[open] summary {
+    background: #2f2f2f;
+  }
+  .about-team-section .team-contact a {
+    background: #242424;
+    border-color: #333;
+    color: #ddd;
+  }
+  .about-team-section .team-contact a:hover {
+    background: #6b0000;
+    border-color: #6b0000;
+    color: #fff;
   }
 
   /* Section divider */
