@@ -1,7 +1,7 @@
 export const team = [
   {
     id: "deidre-buchan",
-    name: "Deidre (Dei) Buchan",
+    name: "Deidre Buchan",
     title: "Bookkeeper",
     certifications: [
       "Intuit Bookkeeping Certification",
