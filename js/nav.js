@@ -9,3 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("#navLinks a[href]");
+  const path = location.pathname.replace(/\/+$/, ""); // strip trailing slash
+  const current = path === "" || path === "/" ? "index.html" : path.split("/").pop();
+
+  links.forEach(a => {
+    const href = a.getAttribute("href");
+    if (href === current || (current === "index.html" && href === "index.html")) {
+      a.setAttribute("aria-current", "page");
+    } else {
+      a.removeAttribute("aria-current");
+    }
+  });
+});

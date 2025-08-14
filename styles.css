@@ -168,6 +168,19 @@ main {
   border: 0;
 }
 
+/* Current-page highlight */
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  font-weight: 600;
+}
+
+/* Optional: clearer focus on nav links */
+nav a:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.7);
+  outline-offset: 2px;
+}
+
 /* ========== 📚 Text Content Section ========== */
 .main-text-content {
   flex: 2;
