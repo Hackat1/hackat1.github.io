@@ -12,15 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("#navLinks a[href]");
-  const path = location.pathname.replace(/\/+$/, ""); // strip trailing slash
-  const current = path === "" || path === "/" ? "index.html" : path.split("/").pop();
+  const here = new URL(location.href);
 
-  links.forEach(a => {
-    const href = a.getAttribute("href");
-    if (href === current || (current === "index.html" && href === "index.html")) {
-      a.setAttribute("aria-current", "page");
-    } else {
-      a.removeAttribute("aria-current");
-    }
+  // Normalize paths by removing a trailing "index.html"
+  const norm = (u) => u.pathname.replace(/index\.html$/i, "").replace(/\/+$/, "");
+
+  links.forEach((a) => {
+    const target = new URL(a.getAttribute("href"), here);
+    const isCurrent = norm(target) === norm(here);
+    a.toggleAttribute("aria-current", isCurrent);
   });
 });
