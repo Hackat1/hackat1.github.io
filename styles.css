@@ -416,6 +416,30 @@ footer {
   color: inherit;
 }
 
+/* --- Team section: light mode fixes & scope --- */
+.about-team-section { 
+  color: #2a2a2a;               /* default text in cards */
+}
+
+/* Neutralize the global <header> styling inside team cards */
+.about-team-section header {
+  background: transparent;      /* remove burgundy bar */
+  color: inherit;               /* use normal text color */
+}
+
+/* Ensure common text elements inherit proper color */
+.about-team-section .team-title,
+.about-team-section .team-bio,
+.about-team-section .team-more,
+.about-team-section .team-contact a {
+  color: inherit;
+}
+
+/* Optional: make cert chips' text legible on light bg */
+.about-team-section .team-certs li {
+  color: #333;
+}
+
 /* ===== Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
 
